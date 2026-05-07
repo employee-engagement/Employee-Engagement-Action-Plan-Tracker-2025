@@ -95,6 +95,19 @@ body{font-family:'DM Sans',sans-serif;background:var(--slate);color:var(--text);
 
 /* ── GROUP ── */
 .group{margin-bottom:.5rem;animation:fadeUp .4s ease both}
+.site-divider{
+  display:flex;align-items:center;gap:1rem;
+  margin:1.75rem 0 1rem;
+}
+.site-divider-line{flex:1;height:1px;background:var(--border)}
+.site-divider-label{
+  font-size:11px;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;white-space:nowrap;
+  padding:4px 14px;border-radius:20px;
+}
+.site-nj{background:#e0f2fe;color:#0369a1;border:1px solid #bae6fd}
+.site-tx{background:#fef9c3;color:#854d0e;border:1px solid #fde68a}
+.site-la{background:#fce7f3;color:#be185d;border:1px solid #fbcfe8}
 .group-header{
   display:flex;align-items:center;gap:.85rem;
   padding:.75rem 0 .5rem;
@@ -546,6 +559,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--slate);color:var(--text);
     </div>
   </div>
 
+  <!-- ── SITE DIVIDER: NJ ── -->
+  <div class="site-divider" data-scope="nj site">
+    <div class="site-divider-line"></div>
+    <span class="site-divider-label site-nj">📍 NJ — Livingston</span>
+    <div class="site-divider-line"></div>
+  </div>
+
   <!-- ── GROUP 6 ── -->
   <div class="group" data-scope="nj site">
     <div class="group-header">
@@ -608,7 +628,15 @@ body{font-family:'DM Sans',sans-serif;background:var(--slate);color:var(--text);
     </div>
   </div>
 
-  <!-- ── GROUP 7
+  <!-- ── SITE DIVIDER: TX ── -->
+  <div class="site-divider" data-scope="tx site">
+    <div class="site-divider-line"></div>
+    <span class="site-divider-label site-tx">📍 TX — Point Comfort</span>
+    <div class="site-divider-line"></div>
+  </div>
+
+  <!-- ── GROUP 7 ── -->
+  <div class="group" data-scope="tx site">
     <div class="group-header">
       <div class="group-num">7</div>
       <div class="group-info">
@@ -670,6 +698,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--slate);color:var(--text);
       </div>
 
     </div>
+  </div>
+
+  <!-- ── SITE DIVIDER: LA ── -->
+  <div class="site-divider" data-scope="la site">
+    <div class="site-divider-line"></div>
+    <span class="site-divider-label site-la">📍 LA — Baton Rouge</span>
+    <div class="site-divider-line"></div>
   </div>
 
   <!-- ── GROUP 8 ── -->
@@ -737,12 +772,18 @@ body{font-family:'DM Sans',sans-serif;background:var(--slate);color:var(--text);
     </div>
 
     <!-- ADDENDUM: Physical Safety -->
-    <div data-scope="la site" style="margin-top:.75rem;">
-      <div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;padding:.75rem 1.25rem;background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;">
-        <span style="font-size:18px">🦺</span>
-        <div>
-          <div style="font-size:13px;font-weight:600;color:#9a3412;">Addendum — Focus Area: Physical Safety</div>
-          <div style="font-size:11.5px;color:#c2410c;margin-top:1px;">Baton Rouge Site-Specific Priority · Initiative 8A</div>
+    <div data-scope="la site">
+
+      <!-- Sub-group header matching group style -->
+      <div style="display:flex;align-items:center;gap:.85rem;padding:.75rem 0 .5rem;border-bottom:1px solid #fed7aa;margin:1.25rem 0 .85rem;">
+        <div style="width:30px;height:30px;border-radius:50%;background:#ea580c;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">8A</div>
+        <div style="flex:1;">
+          <div style="font-size:14px;font-weight:600;color:var(--text);">Physical Safety & Operational Integrity</div>
+          <div style="font-size:11.5px;color:#c2410c;margin-top:1px;">Addendum 8A · LA — Baton Rouge Only</div>
+        </div>
+        <div style="display:flex;gap:.4rem;flex-shrink:0;">
+          <span class="badge b-site">LA – Baton Rouge</span>
+          <span class="badge b-short">Site-Specific · 1–6 mo</span>
         </div>
       </div>
 
@@ -764,7 +805,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--slate);color:var(--text);
           </div>
           <div class="card-footer">
             <span class="badge b-planned">⏳ Planned</span>
-            <span style="font-size:10.5px;color:#ea580c;font-weight:500;padding:3px 11px;border-radius:20px;background:#fff7ed;border:1px solid #fed7aa;">🦺 Physical Safety</span>
             <span class="owner-label">Owner: <span class="owner-pill">Site Safety, Site HR, Corporate HR</span></span>
           </div>
         </div>
@@ -785,7 +825,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--slate);color:var(--text);
           </div>
           <div class="card-footer">
             <span class="badge b-planned">⏳ Planned</span>
-            <span style="font-size:10.5px;color:#ea580c;font-weight:500;padding:3px 11px;border-radius:20px;background:#fff7ed;border:1px solid #fed7aa;">🦺 Physical Safety</span>
             <span class="owner-label">Owner: <span class="owner-pill">Site Safety, Site Leadership, Engineering, Maintenance, Site HR</span></span>
           </div>
         </div>
