@@ -205,10 +205,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--slate);color:var(--text);
     <h1 class="hero-title">Employee Engagement<br>Action Plan</h1>
     <p class="hero-sub">Every commitment we've made to you — tracked in one place.<br>Updated monthly by the Voice Team & HR.</p>
     <div class="stat-row">
-      <div class="stat"><div class="stat-n">12</div><div class="stat-l">Total actions</div></div>
-      <div class="stat"><div class="stat-n">6</div><div class="stat-l">Initiatives</div></div>
+      <div class="stat"><div class="stat-n">16</div><div class="stat-l">Total actions</div></div>
+      <div class="stat"><div class="stat-n">8</div><div class="stat-l">Initiatives</div></div>
       <div class="stat"><div class="stat-n">5</div><div class="stat-l">Enterprise-wide</div></div>
-      <div class="stat"><div class="stat-n">1</div><div class="stat-l">Site: NJ Livingston</div></div>
+      <div class="stat"><div class="stat-n">3</div><div class="stat-l">Site-specific</div></div>
     </div>
   </div>
 </div>
@@ -220,7 +220,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--slate);color:var(--text);
   <button class="filter-btn" onclick="filter('short',this)">Short-term</button>
   <button class="filter-btn" onclick="filter('mid',this)">Mid-term</button>
   <button class="filter-btn" onclick="filter('long',this)">Long-term</button>
-  <button class="filter-btn" onclick="filter('site',this)">NJ – Livingston</button>
+  <button class="filter-btn" onclick="filter('site',this)">All Site-Specific</button>
+  <button class="filter-btn" onclick="filter('nj',this)">NJ – Livingston</button>
+  <button class="filter-btn" onclick="filter('tx',this)">TX – Point Comfort</button>
+  <button class="filter-btn" onclick="filter('la',this)">LA – Baton Rouge</button>
 </div>
 
 <!-- ══ CONTENT ══ -->
@@ -544,7 +547,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--slate);color:var(--text);
   </div>
 
   <!-- ── GROUP 6 ── -->
-  <div class="group" data-scope="site">
+  <div class="group" data-scope="nj site">
     <div class="group-header">
       <div class="group-num">6</div>
       <div class="group-info">
@@ -605,6 +608,136 @@ body{font-family:'DM Sans',sans-serif;background:var(--slate);color:var(--text);
     </div>
   </div>
 
+  <!-- ── GROUP 7 ── -->
+  <div class="group" data-scope="tx site">
+    <div class="group-header">
+      <div class="group-num">7</div>
+      <div class="group-info">
+        <div class="group-title">Leadership Accountability, Performance Clarity & Pay Transparency</div>
+        <div class="group-theme">Leadership · Compensation & Rewards · Feedback & Recognition</div>
+      </div>
+      <div class="group-badges">
+        <span class="badge b-site">TX – Point Comfort</span>
+        <span class="badge b-short">Site-Specific · 1–6 mo</span>
+      </div>
+    </div>
+    <div class="initiative-progress">
+      <span class="ip-label">Initiative progress</span>
+      <div class="ip-bar-bg">
+        <div class="ip-bar-fill" style="width:10%;background:#be185d"></div>
+      </div>
+      <span class="ip-pct">10%</span>
+    </div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon" style="background:#fce7f3">📌</div>
+          <div class="card-right">
+            <div class="card-title">Publish TX Leadership Expectations Framework & In-Person Training</div>
+            <div class="card-desc">Corporate to publish a Leadership Expectations framework covering communication, accountability, respect, follow-through, and coaching. Site HR Team will complete in-person training and follow through. Language aligns with emerging enterprise leadership standards under senior leadership review.</div>
+          </div>
+        </div>
+        <div class="card-progress">
+          <div class="cp-header"><span class="cp-label">Progress</span><span class="cp-pct">10%</span></div>
+          <div class="cp-bar-bg"><div class="cp-bar-fill" style="width:10%;background:#be185d"></div></div>
+          <div class="cp-stage"><span class="stage-label">Current stage:</span> <span class="stage-name">[ Stage name ]</span></div>
+          <div class="cp-stage"><span class="stage-label">Currently with:</span> <span class="stage-with">[ Name / team — expected next step or date ]</span></div>
+        </div>
+        <div class="card-footer">
+          <span class="badge b-planned">⏳ Planned</span>
+          <span class="owner-label">Owner: <span class="owner-pill">Corp. HR, Site HR, L&D</span></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon" style="background:#fce7f3">💲</div>
+          <div class="card-right">
+            <div class="card-title">Publish Texas Pay FAQ, Clarifying Process and Escalation Paths</div>
+            <div class="card-desc">The published FAQ will appear on the TX HR Intranet tutorial page. Success will be measured by a reduction in repeat pay questions regarding new salaries not related to payroll processing.</div>
+          </div>
+        </div>
+        <div class="card-progress">
+          <div class="cp-header"><span class="cp-label">Progress</span><span class="cp-pct">10%</span></div>
+          <div class="cp-bar-bg"><div class="cp-bar-fill" style="width:10%;background:#be185d"></div></div>
+          <div class="cp-stage"><span class="stage-label">Current stage:</span> <span class="stage-name">[ Stage name ]</span></div>
+          <div class="cp-stage"><span class="stage-label">Currently with:</span> <span class="stage-with">[ Name / team — expected next step or date ]</span></div>
+        </div>
+        <div class="card-footer">
+          <span class="badge b-planned">⏳ Planned</span>
+          <span class="owner-label">Owner: <span class="owner-pill">Site HR</span></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── GROUP 8 ── -->
+  <div class="group" data-scope="la site">
+    <div class="group-header">
+      <div class="group-num">8</div>
+      <div class="group-info">
+        <div class="group-title">Manager Enablement & Accountability Reinforcement</div>
+        <div class="group-theme">Enablement · Company Confidence · Leadership · Teamwork & Ownership</div>
+      </div>
+      <div class="group-badges">
+        <span class="badge b-site">LA – Baton Rouge</span>
+        <span class="badge b-short">Site-Specific · 1–6 mo</span>
+      </div>
+    </div>
+    <div class="initiative-progress">
+      <span class="ip-label">Initiative progress</span>
+      <div class="ip-bar-bg">
+        <div class="ip-bar-fill" style="width:10%;background:#be185d"></div>
+      </div>
+      <span class="ip-pct">10%</span>
+    </div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon" style="background:#fce7f3">🏛️</div>
+          <div class="card-right">
+            <div class="card-title">Hold Site-Wide Town Halls to Review Survey Results & Introduce Peer Reviews for Management</div>
+            <div class="card-desc">Commit to quarterly town halls and regularly scheduled safety meetings at Baton Rouge where senior leaders present survey action progress, reinforce safety standards, and take live questions. Increase upper management visibility on the floor between town halls and introduce a structured peer review component in manager evaluations — giving employees a formal voice in how their managers are assessed.</div>
+          </div>
+        </div>
+        <div class="card-progress">
+          <div class="cp-header"><span class="cp-label">Progress</span><span class="cp-pct">10%</span></div>
+          <div class="cp-bar-bg"><div class="cp-bar-fill" style="width:10%;background:#be185d"></div></div>
+          <div class="cp-stage"><span class="stage-label">Current stage:</span> <span class="stage-name">[ Stage name ]</span></div>
+          <div class="cp-stage"><span class="stage-label">Currently with:</span> <span class="stage-with">[ Name / team — expected next step or date ]</span></div>
+        </div>
+        <div class="card-footer">
+          <span class="badge b-planned">⏳ Planned</span>
+          <span class="owner-label">Owner: <span class="owner-pill">Site Leadership, Site HR</span></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon" style="background:#fce7f3">⚖️</div>
+          <div class="card-right">
+            <div class="card-title">Enforce Personnel Management & Conflict Resolution Training — Standardize Corrective Action</div>
+            <div class="card-desc">Require all LA people managers to complete mandatory personnel management and conflict resolution training covering performance conversations, escalation protocols, and respectful communication. Simultaneously audit and standardize corrective action practices across all Baton Rouge teams with a single, consistently applied escalation-of-discipline process.</div>
+          </div>
+        </div>
+        <div class="card-progress">
+          <div class="cp-header"><span class="cp-label">Progress</span><span class="cp-pct">10%</span></div>
+          <div class="cp-bar-bg"><div class="cp-bar-fill" style="width:10%;background:#be185d"></div></div>
+          <div class="cp-stage"><span class="stage-label">Current stage:</span> <span class="stage-name">[ Stage name ]</span></div>
+          <div class="cp-stage"><span class="stage-label">Currently with:</span> <span class="stage-with">[ Name / team — expected next step or date ]</span></div>
+        </div>
+        <div class="card-footer">
+          <span class="badge b-planned">⏳ Planned</span>
+          <span class="owner-label">Owner: <span class="owner-pill">Site Leadership, Site HR</span></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <div class="page-footer">
     Last updated: May 2025 &nbsp;·&nbsp; Maintained by the Voice Team & HR &nbsp;·&nbsp; Questions? Contact HR
   </div>
@@ -616,7 +749,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--slate);color:var(--text);
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     document.querySelectorAll('[data-scope]').forEach(el => {
-      el.toggleAttribute('data-hidden', scope !== 'all' && el.dataset.scope !== scope);
+      const scopes = el.dataset.scope.split(' ');
+      const show = scope === 'all' || scopes.includes(scope);
+      el.toggleAttribute('data-hidden', !show);
     });
   }
 
